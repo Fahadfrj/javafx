@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.filmutleie.HelloController">
+   <children>
+      <Label layoutX="50.0" layoutY="39.0" text="FilmUtleie">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="126.0" text="Navn" />
+      <Label layoutX="73.0" layoutY="176.0" text="number" />
+      <Label layoutX="73.0" layoutY="218.0" text="Film" />
+      <TextField fx:id="nvn" layoutX="152.0" layoutY="131.0" />
+      <TextField fx:id="nmbr" layoutX="152.0" layoutY="172.0" />
+      <TextField fx:id="flm" layoutX="152.0" layoutY="214.0" />
+      <Button fx:id="lin" layoutX="395.0" layoutY="292.0" mnemonicParsing="false" onAction="#leverinn" prefHeight="26.0" prefWidth="102.0" text="Lever inn" />
+      <Button fx:id="utl" layoutX="168.0" layoutY="318.0" mnemonicParsing="false" onAction="#visutleie" prefHeight="26.0" prefWidth="102.0" text="Vis utleie" />
+      <Button fx:id="lut" layoutX="168.0" layoutY="279.0" mnemonicParsing="false" onAction="#leieut" prefHeight="26.0" prefWidth="102.0" text="Leie ut" />
+      <TextArea fx:id="vis" layoutX="25.0" layoutY="380.0" prefHeight="164.0" prefWidth="562.0" promptText="VIs Utleie" />
+   </children>
+</AnchorPane>
